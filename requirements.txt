@@ -7,20 +7,28 @@ numpy
 matplotlib
 plotly
 seaborn
+altair
 
 # Machine Learning / Analítica
 scikit-learn
+statsmodels
 
-# Manejo de archivos
+# Manejo de archivos y formatos
 openpyxl
 xlrd
+pyyaml
 
-# JSON y APIs
+# JSON, APIs y Web scraping
 requests
+beautifulsoup4
 
 # Autenticación y seguridad
 bcrypt
+python-jose
 
 # Testing
 pytest
 
+# Optimización y rendimiento
+tqdm
+joblib
