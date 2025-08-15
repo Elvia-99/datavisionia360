@@ -1,8 +1,26 @@
+# Core
 streamlit
 pandas
 numpy
+
+# Visualización
 matplotlib
 plotly
+seaborn
+
+# Machine Learning / Analítica
 scikit-learn
+
+# Manejo de archivos
 openpyxl
+xlrd
+
+# JSON y APIs
+requests
+
+# Autenticación y seguridad
+bcrypt
+
+# Testing
+pytest
 
