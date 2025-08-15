@@ -1,26 +1,44 @@
-# app/main.py
 import streamlit as st
-from components.navbar import navbar
-from components.sidebar import sidebar
+from components import navbar, sidebar
+from utils import config
 
-def main():
-    st.set_page_config(page_title="DataVisionIA360", page_icon="📊", layout="wide")
+# ====== Cargar estilos CSS desde assets/styles.css ======
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    # Barra de navegación superior
-    navbar()
+# ====== Configuración de la página ======
+st.set_page_config(
+    page_title="DataVisionIA360",
+    layout="wide",
+    page_icon="assets/logo.png"
+)
 
-    # Menú lateral
-    sidebar()
+# ====== Aplicar estilos ======
+load_css("assets/styles.css")
 
-    st.title("🚀 Bienvenido a DataVisionIA360")
-    st.markdown("""
-    Plataforma integral de **Big Data** e **Inteligencia Artificial** para análisis de negocios.
+# ====== Barra de navegación ======
+navbar.render_navbar()
 
-    ---
-    Selecciona una página en el menú lateral para comenzar.
-    """)
+# ====== Barra lateral ======
+sidebar.render_sidebar()
 
-if __name__ == "__main__":
-    main()
+# ====== Contenido principal ======
+st.title("Bienvenido a DataVisionIA360")
+st.write("Tu consultora inteligente en Big Data, IA y Analítica Avanzada.")
 
+# ====== Ejemplo de Dashboard Inicial ======
+col1, col2 = st.columns(2)
+
+with col1:
+    st.subheader("Vista General")
+    st.image("assets/dashboard_mockup.png", caption="Ejemplo de Dashboard", use_column_width=True)
+
+with col2:
+    st.subheader("Métricas Clave")
+    st.metric(label="Clientes Activos", value="120")
+    st.metric(label="Proyectos en Curso", value="15")
+    st.metric(label="Satisfacción", value="98%")
+
+st.success("Plataforma lista. Día 1 completado.")
 
