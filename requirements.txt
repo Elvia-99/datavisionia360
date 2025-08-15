@@ -1,34 +1,43 @@
 # Core
-streamlit
-pandas
-numpy
+streamlit>=1.25.0
+pandas>=1.5.3
+numpy>=1.24.0
 
 # Visualización
-matplotlib
-plotly
-seaborn
-altair
+matplotlib>=3.7.0
+plotly>=5.14.0
+seaborn>=0.12.2
+altair>=5.0.0
 
 # Machine Learning / Analítica
-scikit-learn
-statsmodels
+scikit-learn>=1.3.0
+statsmodels>=0.14.0
 
 # Manejo de archivos y formatos
-openpyxl
-xlrd
-pyyaml
+openpyxl>=3.1.2
+xlrd>=2.0.1
+pyyaml>=6.0
 
 # JSON, APIs y Web scraping
-requests
-beautifulsoup4
+requests>=2.31.0
+beautifulsoup4>=4.12.2
 
 # Autenticación y seguridad
-bcrypt
-python-jose
+bcrypt>=4.0.1
+python-jose>=3.3.0
+streamlit-authenticator>=0.2.2
+
+# Imágenes
+Pillow>=9.5.0
 
 # Testing
-pytest
+pytest>=7.4.0
 
 # Optimización y rendimiento
-tqdm
-joblib
+tqdm>=4.65.0
+
+# Git Integration
+GitPython>=3.1.31
+
+# Python Version
+python_version >= "3.10"
