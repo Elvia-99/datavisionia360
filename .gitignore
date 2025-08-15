@@ -1,1 +1,23 @@
+# Archivos y carpetas a ignorar por Git
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.DS_Store
+.env
+*.env
+*.log
+*.ipynb_checkpoints
+.vscode/
+.idea/
+*.csv
+*.xlsx
+*.xls
+*.json
+*.zip
+*.tar.gz
+*.model
+*.pkl
 
