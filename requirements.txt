@@ -2,7 +2,8 @@
 streamlit>=1.25.0
 pandas>=1.5.3
 numpy>=1.24.0
-
+supabase>=2.3.0
+Pillow>=9.5.0
 # Visualización
 matplotlib>=3.7.0
 plotly>=5.14.0
