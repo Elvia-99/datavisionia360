@@ -9,7 +9,8 @@ matplotlib>=3.7.0
 plotly>=5.14.0
 seaborn>=0.12.2
 altair>=5.0.0
-
+supabase
+psycopg2-binary
 # Machine Learning / Analítica
 scikit-learn>=1.3.0
 statsmodels>=0.14.0
